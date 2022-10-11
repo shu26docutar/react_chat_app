@@ -1,70 +1,65 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 環境構築
 
-## Available Scripts
+学習と開発に必要な環境を構築します。
+まずは、開発環境に必要なパッケージ・ツールが入っているか確認していきます。
 
-In the project directory, you can run:
+必要なツール・パッケージ)  
+1.vscode  
+1.node.js  
+1.npm  
 
-### `npm start`
+上記がPCに入っているか確認するために、コマンドでも確認ができます。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+npm -v
+node -v
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+リンクからインストールする場合は、推奨版が変更されていたり、最新のバージョンが上がっている可能性もあるので、インストール時には確認をお願いします。
 
-### `npm test`
+nodeがインストールされていない場合は、こちらのURL`https://nodejs.org/ja/download/　`からインストールすることができます。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npmのインストールは下記のコマンドを入力することでインストールが可能になります。
 
-### `npm run build`
+```
+sudo npm install -g npm
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+VSCodeがインストールされていない場合は、こちらのURL`https://azure.microsoft.com/ja-jp/products/visual-studio-code/`からインストールすることができます。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ツールやパッケージ、プログラミング言語をインストールする場合は、最新版もしくは、推奨版をインストールします。
+最新版は予期せぬエラーやバグが発生する可能性があります。
+バージョンが古いものをお持ちの場合は、セキュリティの観点からバージョンを上げるようにしてください。
 
-### `npm run eject`
+# Reactアプリケーションの作成
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+プロジェクトを配置するディレクトリに下記のコマンドを入力。
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```terminal:
+$ npm install react-app アプリケーション名
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+firebaseを使用するために、プロジェクトで下記のコマンドを入力しfirebaseをプロジェクトに落とし込みます。
+今回は、firebese hooksをインストールします。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+$ npm install firebase react-firebase-hooks
+```
 
-## Learn More
+サーバAPIとして使用する`Firebase Console`の登録が完了していない場合は、以下の手順で登録を実施してください。。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Reactアプリケーションの開始
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+プロジェクト内で、下記のコマンドを入力すると、`http://localhost:3000`のローカルサーバが起動し、アプリケーションが開始されます。
 
-### Analyzing the Bundle Size
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Firebase
